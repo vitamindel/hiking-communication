@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Top 5 Hiking Trails</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 12px;
+        }
+        h1 {
+            color: #2980b9;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .back-link {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        ol {
+            list-style-type: none;
+            padding-left: 0;
+            counter-reset: item;
+        }
+        li {
+            margin-bottom: 40px;
+            font-size: 1.1em;
+            position: relative;
+            padding-left: 30px;
+        }
+        li::before {
+            content: counter(item) ". ";
+            counter-increment: item;
+            font-size: 1.8em;
+            color: #2980b9;
+            position: absolute;
+            left: 0;
+        }
+        .trail-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+            text-align: center;
+        }
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Top 5 Hiking Trails</h1>
+        <div class="back-link">
+            <p><a href="../index.html">Back to Home</a></p>
+        </div>
+        <p>Discover the most breathtaking hiking trails around the world:</p>
+        
+        <ol>
+            <li>
+                <div class="trail-title">Grand Canyon, USA</div>
+                <img src="grandcanyon.avif" alt="Grand Canyon" class="image">
+                <p>The Grand Canyon offers a variety of trails ranging from easy walks along the rim to challenging descents into the canyon itself. The Bright Angel Trail and South Kaibab Trail are popular choices for experiencing the stunning vistas and unique geological formations.</p>
+            </li>
+            <li>
+                <div class="trail-title">Inca Trail, Peru</div>
+                <img src="incatrail.jpg" alt="Inca Trail" class="image">
+                <p>The Inca Trail is a historic route that leads to the ancient city of Machu Picchu. This multi-day trek takes hikers through diverse landscapes, including cloud forests, alpine tundra, and Incan ruins. The trail is known for its breathtaking views and cultural significance.</p>
+            </li>
+            <li>
+                <div class="trail-title">Torres del Paine, Chile</div>
+                <img src="torres-del-paine.avif" alt="Torres del Paine" class="image">
+                <p>Located in Patagonia, the Torres del Paine National Park is renowned for its dramatic scenery, including towering mountains, glaciers, and turquoise lakes. The W Trek and the O Circuit are popular routes that offer hikers the chance to explore this stunning wilderness.</p>
+            </li>
+            <li>
+                <div class="trail-title">Mount Kilimanjaro, Tanzania</div>
+                <img src="mount-killmanjaro.webp" alt="Mount Kilimanjaro" class="image">
+                <p>Mount Kilimanjaro is the highest peak in Africa and a bucket-list destination for many hikers. The trek to the summit takes you through five distinct climate zones, from tropical rainforest to arctic conditions. The Machame and Marangu routes are among the most popular paths to the top.</p>
+            </li>
+            <li>
+                <div class="trail-title">Swiss Alps, Switzerland</div>
+                <img src="swiss-alps.avif" alt="Swiss Alps" class="image">
+                <p>The Swiss Alps offer a wide range of hiking opportunities, from gentle valley walks to challenging alpine ascents. The Haute Route, which connects Chamonix in France to Zermatt in Switzerland, is a classic trek that showcases the region's stunning mountain scenery and charming villages.</p>
+            </li>
+        </ol>
+        <footer>
+            <p><a href="../index.html">Back to Home</a></p>
+        </footer>
+    </div>
+</body>
+</html>
